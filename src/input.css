@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+/* Don't us eit with React or JS framework, just apply classes into ur component, otherwise u create an other classe (menu-items) nd increase a lot ur bundle size */
+@layer components {
+  .menu-items {
+    @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out;
+  }
+}
