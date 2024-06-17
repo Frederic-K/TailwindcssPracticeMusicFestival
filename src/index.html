@@ -21,13 +21,17 @@
           }
         })
 
+        // const ticketsMenuItems = document.getElementById('tickets-menu-items')
+        // ticketsMenuItems.addEventListener('click', () => {
+        //   if (ticketsMenuItems.classList.contains('open')) {
+        //     ticketsMenuItems.classList.remove('open')
+        //   } else {
+        //     ticketsMenuItems.classList.add('open')
+        //   }
+        // })
         const ticketsMenuItems = document.getElementById('tickets-menu-items')
         ticketsMenuItems.addEventListener('click', () => {
-          if (ticketsMenuItems.classList.contains('open')) {
-            ticketsMenuItems.classList.remove('open')
-          } else {
-            ticketsMenuItems.classList.add('open')
-          }
+          ticketsMenuItems.classList.toggle('open')
         })
 
         const previousButton = document.getElementById('previous')
@@ -42,14 +46,18 @@
           carousel.scrollLeft = carousel.scrollLeft + itemWidth
         })
 
+        // const darkModeToggle = document.getElementById('dark-mode-toggle')
+        // darkModeToggle.addEventListener('click', () => {
+        //   if (document.body.classList.contains('dark')) {
+        //     document.body.classList.remove('dark')
+        //   } else {
+        //     document.body.classList.add('dark')
+        //   }
+        // })
         const darkModeToggle = document.getElementById('dark-mode-toggle')
-        darkModeToggle.addEventListener('click', () => {
-          if (document.body.classList.contains('dark')) {
-            document.body.classList.remove('dark')
-          } else {
-            document.body.classList.add('dark')
-          }
-        })
+        darkModeToggle.addEventListener('click', () =>
+          document.body.classList.toggle('dark'),
+        )
       }
     </script>
   </head>
@@ -211,7 +219,11 @@
       <div
         class="mx-auto mt-20 max-w-screen-lg text-zinc-900 dark:text-zinc-200"
       >
-        <h2>Headliners</h2>
+        <h2
+          class="inline-block bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent"
+        >
+          Headliners
+        </h2>
         <p>
           Experience the sonic delight from these made-up artists across 7 days
           that music fans are calling “one of the many gigs that will happen
@@ -292,7 +304,11 @@
             <i class="fas fas fa-angle-right"></i>
           </div>
         </div>
-        <h2 class="mt-20">Lineup</h2>
+        <h2
+          class="mt-20 inline-block bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent"
+        >
+          Lineup
+        </h2>
         <p>
           Follow the timetable and stage to ensure you don't miss your favourite
           artists
