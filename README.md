@@ -91,6 +91,4 @@ This project is open source and available under the [ISC License](LICENSE).
 - Font Awesome for icons
 - Unsplash for stock images (if applicable)
 
-```
 
-```
