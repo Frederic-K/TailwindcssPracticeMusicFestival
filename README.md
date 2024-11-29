@@ -23,7 +23,7 @@ To get started with this project, follow these steps:
 
 ```
 
-git clone https://github.com/your-username/TailwindcssPracticeMusicFestival.git
+git clone https://github.com/Frederic-K/TailwindcssPracticeMusicFestival.git
 
 ```
 
